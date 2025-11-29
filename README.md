@@ -1,136 +1,59 @@
-📌 BunkX
+🎓 BunkX — Bunk Smarter, Not Harder 😎
 
-🎯 Smart Attendance Management & Bunk Planning Web App
+BunkX is the smartest attendance planner for college students.
+No more guessing your attendance — BunkX calculates the future percentage before you bunk any class! 📉➡📈
 
-BunkX is a modern and intuitive attendance calculator that helps students plan their bunks smartly without harming their attendance percentage. Using real-time calculations, history tracking, and Google login, BunkX ensures every student maintains attendance the smart way!
+Whether you want to enjoy college fests, take a break, or just chill with friends… BunkX helps you stay safe from attendance shortages while still having fun. 😉
 
-🌟 Features
+🚀 What BunkX Can Do
 
-✔ Google Sign-In Authentication
-— Secure login using OAuth (keeps user profile stored in browser)
+✨ Real-time attendance projection
+🔢 Auto-detect missed classes
+🧠 Saves your past calculations in history
+👤 Google Login — Secure & seamless
+🌗 Light/Dark theme for any mood
+📊 Animated gauge for visual stats
+📱 Fully responsive for mobile & desktop
+💬 Contact form for quick feedback
 
-
-login
-
-✔ Interactive Attendance Calculator
-— Auto-fills missed classes + percentage validation
-
-
-app
-
-✔ Modern UI with Light/Dark Theme Toggle
-— Theme saved in localStorage for consistency
-
-
-app
-
-✔ Visual Percentage Gauge
-— Smooth animation for projected attendance
-
-
-app
-
-✔ History Save System
-— View and track multiple attendance calculations
-
-
-app
-
-✔ College Datalist for Quick Selection
-
-
-app
-
-✔ Contact Form with EmailJS Integration
-
-
-index
-
-✔ Fully Responsive Glass-morphic UI
-— Works smoothly on mobile and desktop
-
-
-styles
-
-🛠️ Tech Stack
-Layer	Technology
+🛠️ Tech Behind the Magic
+Feature	Technology
 Frontend	HTML, CSS, JavaScript
-Authentication	Google Identity Services
+Auth System	Google Identity Services
+Data Storage	LocalStorage (privacy-friendly)
 Email Service	EmailJS
-Storage	LocalStorage
-Icons	RemixIcons, FontAwesome
-UI Design	Glassmorphism, Responsive CSS Grid
-📂 Project Structure
-📦 BunkX
- ┣ 📜 index.html       # Main dashboard
- ┣ 📜 app.js           # Core logic: auth, calculation, history
- ┣ 📜 styles.css       # Global styles + themes + layout
- ┣ 📜 login.html       # Google Auth login page
- ┣ 📜 login.css        # Login page UI styling
- ┣ 📜 login.js         # Google login handling
- ┗ 📂 image/
-      ┗ LOGO.png
+UI Style	Glassmorphism + Responsive Grid
+🎯 Why BunkX?
+
+College life = Enjoyment + Balance 🎉
+But deadlines and attendance rules can ruin the vibe…
+
+BunkX gives you:
+
+Clear projections
+
+Smart decision-making
+
+No surprises at the end of semester 🚫😱
+
+Bunk responsibly. Live freely.
+That’s the BunkX way. 😌✨
+
+📸 Screenshots (Coming Soon)
+<img width="1898" height="897" alt="image" src="https://github.com/user-attachments/assets/ae971f6f-d3f5-4d3d-bf72-e83211731cc9" />
+<img width="1897" height="899" alt="image" src="https://github.com/user-attachments/assets/56460674-7381-4781-90db-ee03c750bf30" />
 
 
-(Referenced files:
-)
 
-🚀 Getting Started
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/BunkX.git
-cd BunkX
-
-2️⃣ Setup Google Login
-
-Replace the client ID inside login.html:
-
-data-client_id="YOUR_CLIENT_ID_HERE.apps.googleusercontent.com"
-
-3️⃣ Configure EmailJS (optional)
-
-In index.html, update:
-
-
-index
-
-emailjs.init("YOUR_PUBLIC_KEY");
-emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {...})
-
-4️⃣ Run Locally
-
-Simply open index.html in browser
-(Requires a local server for full login flow)
-
-📸 Demo & Screenshots
-
-Add screenshots/GIFs here
-(loading screen, calculation, history view, light theme)
-
-🔐 Security & Privacy
-
-No backend: all data stays in your browser
-
-Google login only collects basic profile
-
-History saved locally, user-controlled
-
-🧑‍💻 Author
+🧑‍💻 Developer
 
 Ritikesh Bhardwaj
-👨‍💻 BCA Student | Web Developer
-📌 Portfolio Coming Soon!
+BCA Student | Web Developer
 
-Connect with me:
+🌐 Want to contact me or share suggestions?
+Visit my website — you’ll find all my social links there so we can connect easily! 😊
 
-Platform	Link
-GitHub	https://github.com/RitikesH-28
+⭐ Support the Project
 
-LinkedIn	https://www.linkedin.com/in/ritikesh-bhardwaj-274a48254
-
-Instagram	https://www.instagram.com/itz_.ritik_18_/
-
-Twitter	https://x.com/xRiTiKesHx
-⭐ Contribute
-
-Pull requests & feedback are welcome!
-If you like this project, please give it a ⭐ on GitHub 💙
+If you like BunkX, give it a ⭐ and share it with your college buddies!
+Your support motivates more cool features!
