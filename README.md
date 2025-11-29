@@ -1,4 +1,5 @@
 📌 BunkX
+
 🎯 Smart Attendance Management & Bunk Planning Web App
 
 BunkX is a modern and intuitive attendance calculator that helps students plan their bunks smartly without harming their attendance percentage. Using real-time calculations, history tracking, and Google login, BunkX ensures every student maintains attendance the smart way!
