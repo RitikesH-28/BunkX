@@ -39,9 +39,10 @@ No surprises at the end of semester 🚫😱
 Bunk responsibly. Live freely.
 That’s the BunkX way. 😌✨
 
-📸 Screenshots (Coming Soon)
-<img width="1898" height="897" alt="image" src="https://github.com/user-attachments/assets/ae971f6f-d3f5-4d3d-bf72-e83211731cc9" />
-<img width="1897" height="899" alt="image" src="https://github.com/user-attachments/assets/56460674-7381-4781-90db-ee03c750bf30" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ae971f6f-d3f5-4d3d-bf72-e83211731cc9" width="80%" />
+  <img src="https://github.com/user-attachments/assets/56460674-7381-4781-90db-ee03c750bf30" width="80%" />
+</p>
 
 
 
