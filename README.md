@@ -45,10 +45,11 @@ That’s the BunkX way. 😌✨
 
 
 
-🧑‍💻 Developer
+🧑‍💻 Author
 
 Ritikesh Bhardwaj
-BCA Student | Web Developer
+👨‍💻 BCA Student | Web Developer
+📌 Portfolio Coming Soon!
 
 🌐 Want to contact me or share suggestions?
 Visit my website — you’ll find all my social links there so we can connect easily! 😊
