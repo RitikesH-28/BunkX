@@ -5,6 +5,8 @@ No more guessing your attendance — BunkX calculates the future percentage befo
 
 Whether you want to enjoy college fests, take a break, or just chill with friends… BunkX helps you stay safe from attendance shortages while still having fun. 😉
 
+
+
 🚀 What BunkX Can Do
 
 ✨ Real-time attendance projection
@@ -16,6 +18,8 @@ Whether you want to enjoy college fests, take a break, or just chill with friend
 📱 Fully responsive for mobile & desktop
 💬 Contact form for quick feedback
 
+
+
 🛠️ Tech Behind the Magic
 Feature	Technology
 Frontend	HTML, CSS, JavaScript
@@ -23,6 +27,9 @@ Auth System	Google Identity Services
 Data Storage	LocalStorage (privacy-friendly)
 Email Service	EmailJS
 UI Style	Glassmorphism + Responsive Grid
+
+
+
 🎯 Why BunkX?
 
 College life = Enjoyment + Balance 🎉
@@ -39,9 +46,14 @@ No surprises at the end of semester 🚫😱
 Bunk responsibly. Live freely.
 That’s the BunkX way. 😌✨
 
+
+
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ae971f6f-d3f5-4d3d-bf72-e83211731cc9" width="50%" />
 </p>
+
+
 
 
 
@@ -53,8 +65,14 @@ Ritikesh Bhardwaj
 
 📌 Portfolio Coming Soon!
 
+
+
+
 🌐 Want to contact me or share suggestions?
 Visit my website — you’ll find all my social links there so we can connect easily! 😊
+
+
+
 
 ⭐ Support the Project
 
