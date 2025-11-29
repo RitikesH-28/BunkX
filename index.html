@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BunkX</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="left-side">
+      <div class="logo-box">
+        <img class="logo" src="image/LOGO.png" alt="logo"></span>
+        <h1>BunkX</h1>
+      </div>
+      <div id="userProfile" class="user-pill"></div>
+    </div>
+    <div class="right-side">
+      <button id="sunToggle" class="btn small-btn">
+        <i class="ri-sun-line"></i>
+      </button>
+      <button onclick="logout()" class="btn small-btn ghost">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section class="card glass fade">
+      <h2>Attendance Calculator</h2>
+      <p class="muted">Plan your attendance before bunking 😉</p>
+
+      <form id="calcForm" class="grid">
+        <div class="field">
+          <label>College</label>
+          <input id="college" list="collegeList" placeholder="Search or type your college" required>
+          <datalist id="collegeList"></datalist>
+        </div>
+
+        <div class="field">
+          <label>Course</label>
+          <select id="course" required>
+            <option value="">Select course</option>
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>BBA</option>
+            <option>B.Sc</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Year</label>
+          <select id="year" required>
+            <option value="">Select year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Semester</label>
+          <select id="sem" required>
+            <option value="">Select semester</option>
+            <option>Sem 1</option>
+            <option>Sem 2</option>
+            <option>Sem 3</option>
+            <option>Sem 4</option>
+            <option>Sem 5</option>
+            <option>Sem 6</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Current Attendance (%)</label>
+          <input id="current" type="number" placeholder="e.g., 82.5" min="0" max="100" step="0.01" required>
+        </div>
+        <div class="field">
+          <label>Total Classes Happened Till Now</label>
+            <input id="total" type="number" placeholder="e.g., 120" min="1" required>
+        </div>
+        <div class="field">
+          <label>Lectures Missed Till Now</label>
+          <input id="missed" type="number" placeholder="e.g., 12" min="0" required>
+
+        </div>
+        <div class="field">
+          <label>Lectures You Will Miss Next</label>
+          <input id="bunk" type="number" placeholder="e.g., 5" min="1" required>
+        </div>
+
+        <div class="field span">
+          <button class="btn primary" type="submit">Calculate</button>
+        </div>
+      </form>
+      <div id="result" class="result hidden">
+        <div class="gauge-box">
+          <svg class="circular-chart" viewBox="0 0 36 36">
+            <path class="circle-bg"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831" />
+
+            <path id="progressCircle" class="circle" stroke-dasharray="0,100"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831" />
+
+            <text id="percentText" x="18" y="20.35" class="percentage">0%</text>
+          </svg>
+        </div>
+
+        <div>
+          <p><strong>Your new attendance:</strong> <span id="projected">0%</span></p>
+          <p class="muted" id="details"></p>
+
+          <div class="result-actions">
+            <button id="saveBtn" class="btn action-btn">Save to History</button>
+            <button id="viewHistory" class="btn ghost action-btn">View History</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historySection" class="card glass fade hidden">
+      <h2>Saved History</h2>
+
+      <div id="historyList" class="history-list"></div>
+
+      <button id="clearHistory" class="btn danger">Clear All</button>
+    </section>
+
+  </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/ritikesh-bhardwaj-274a48254" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/RitikesH-28" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/itz_.ritik_18_/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/xRiTiKesHx" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+  
+  <section id="contact" class="section contact">
+    <h2 class="main">Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+  <p>© 2025 Ritikesh Bhardwaj. Built with ❤️ using HTML, CSS, and JS.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("tcH-1Yf_05BWJ-Lvd");
+  })();
+</script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.send("service_620dpe9", "template_k6j5yzu", {
+        from_name: document.getElementById("name").value,
+        reply_to: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    })
+    .then(() => {
+        alert("✅ Message sent successfully!");
+        document.getElementById("contactForm").reset();
+    })
+    .catch((error) => {
+        alert("❌ Error: " + JSON.stringify(error));
+    });
+});
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>

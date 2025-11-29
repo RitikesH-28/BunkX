@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BunkX • Login</title>
+
+  <link rel="stylesheet" href="login.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+
+  <div class="login-wrapper">
+
+    <div class="login-card">
+      
+      <img class="logo" src="image/LOGO.png" alt="logo">
+
+      <h1>BunkX</h1>
+      <p class="subtitle">Sign in to use the attendance calculator</p>
+
+      <div id="g_id_onload"
+        data-client_id="922423709243-vo5k298uljvph8tbk7akl0s5gv8qthnj.apps.googleusercontent.com"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-callback="handleLogin">
+      </div>
+
+      <div class="g_id_signin"
+        data-type="standard"
+        data-shape="pill"
+        data-theme="filled_blue"
+        data-size="large"
+        data-logo_alignment="left">
+      </div>
+
+      <p class="terms">By continuing, you agree to the Terms & Privacy Policy.</p>
+
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
